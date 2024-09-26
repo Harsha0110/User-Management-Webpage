@@ -4,9 +4,12 @@ const dotenv = require ("dotenv");
 dotenv.config();
 const app =express();
 const user =require("./models/userModels");
+const cors =require("cors");
+
+
+app.use(cors()); // this will remove the cors error and allow us to send and get the response of different port number
 const userRoutes = require("./routes/userRoutes");
-
-
+app.use(express.json());
 
 
 

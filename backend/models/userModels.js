@@ -15,7 +15,11 @@ age :{
     type: Number,
 },
 
-});
+},
+
+{timestamps:true}
+
+);
 //creating models
 const user =mongoose.model('user',userSchema);
 module.exports=user;
