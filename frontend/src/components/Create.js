@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import {useNavigate} from "react-router-dom"
-import Create.css
+import './create.css';
+
 //import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Create = () => {
