@@ -19,7 +19,7 @@ const Create = () => {
       console.log("Submitted Data:", { name, email, age });
       // You can also send the data to a server or API here
       const addUser ={name,email,age};
-      const response = await fetch("http://localhost:5000",
+      const response = await fetch("http://localhost:4000",
         {
           method :"POST",
           body : JSON.stringify(addUser),
